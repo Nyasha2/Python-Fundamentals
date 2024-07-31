@@ -1,0 +1,46 @@
+CS 1 22fa Final Exam
+Part A: Pitfalls
+Student Name: Nyasha Makaya
+
+Part A.1: Syntax Errors
+0. Line 1 has a syntax error for putting quotes around the second parameter
+which is syntax for a string value, not a function argument. The valid
+syntax required for the function header on Line 1 replaces 'lst' with lst.
+1. Line 13 has a syntax error for omitting the colon (: ) after a while statement.
+The valid syntax would put a colon after len(list).
+2. Line 17 has an indendation error: the elif statement is not indented with the same
+number of spaces as its subsequent if statement. The valid syntax would have the elif
+aligned with the if statement above.
+3. Line 8 has a try statement without an except to it. The valid syntax would involve
+an except statement below the return statement in line 9.
+4. Line 14: the use of the = to compare equality. It should have been or lst[i] == item:
+5. Line 19: the elif statement doesnt have a condition. The elif statement should have been followed by a
+condition, or else the else statement was supposed to be used.
+
+Part A.2: Semantic Errors
+0. Line 25 has a semantic error due to adding an unspecified '.txt' suffix
+when reading the file. While this is valid syntax, the function specifies
+that the file is read as given, without adding suffixes.
+1. Line 1: is_palindrome function doesn't have a return statement, which causes problems when it is
+being called in line 33, as it is being expected to return true or false.
+2. Line 34 is trying to add an element to a list using the + operation, which is wrong. To add
+elements to the list, it should have been ps.append(word).
+3. line 35 trys to add elements of one list to another list by using the + operation, which is wrong. To
+do that, we are supposed to iterate over the elements of the ps list and add them individually to the
+palindromes list.
+4. Line 36 is repetitive, it is reading the next line of the file, which is the same thing done by the for loop.
+5. Line 31 attempts to split the words in a line, but doesn't specify the character at which the words are supposed
+to be split. It should have been words.split(' ').
+
+Part A.3: Style(Design Flaw) Errors
+0. Both Lines 7 and 9 have style issues _specific to inline comment spacing_
+there should be a space before(if next to code) and after  # for
+inline comments.
+1. Line 2 has a docstring that has single quotes around it: it should have 3 double quotes around it.
+2. Lines 9, 10 and 12 have inconsistent indendation(they indent by a different number of spaces)
+3. the naming throughout the file is a bad naming practice as non of the variable names can actually tell
+you anything about it, same as the function name.
+4. Line 8 has spacing problems, the d % 2 == 0: statement was supposed to be spaced like: d % 2 == 0. The same applies to
+lines 3, 4 and 5.
+5. line 9 has a comment in front of the code
+the comment was supposed to be above the code to make it cleaner.

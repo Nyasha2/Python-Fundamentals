@@ -1,0 +1,4 @@
+assignment,question,response_time,response_ta,ta_timeframe
+MP1,What is a list?,269,Foo Bar,"('18:00', '22:00')"
+MP1,What is a dictionary?,264,Foo Bar,"('18:00', '22:00')"
+MP1,How do I write a good docstring?,263,Foo Bar,"('18:00', '22:00')"
